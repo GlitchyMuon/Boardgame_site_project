@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(0, 29, 15);
+}
+h1{
+    color:rgb(169, 218, 202);
+    text-align: center;
+}
+
+a:link, #add {
+
+    text-align : left;
+}
+
+a:link, #contact {
+
+    text-align: right;
+}
