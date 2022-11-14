@@ -18,7 +18,8 @@
                 Contactes-nous
             </button>
 
-      
+    <h2>Merci de votre visite</h2>
+
             
       
 </body>
