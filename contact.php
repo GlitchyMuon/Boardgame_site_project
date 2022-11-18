@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,18 +10,18 @@
     <h1>Contact</h1>
 
     <form method="post" action="traitement.php">
-        <fieldset>
-            <legend>Vos coordonnées</legend>
+        <fieldset style="padding-left:75px;border:2px dotted indigo">
+            <legend style="font-weight: bold">Vos coordonnées</legend>
         
                 <p><label for="user">Votre pseudo</label> : <input type="text" name="user" id="user" size="30" maxlength="15" required autofocus /></p>
             
                 <p><label for="email">Votre e-mail</label> : <input type="email" name="email" id="email" placeholder="Ex : username@gmail.com" size="30" maxlength="30" required /></p>
         </fieldset>
 
-        <fieldset>
-            <legend>Votre souhait</legend>
+        <fieldset style="padding-left:75px;border:2px dashed indigo">
+            <legend style="font-weight: bold">Votre souhait</legend>
                     <p>
-                        <label for="raison">Pour quelle raison nous contactez-vous ?</label><br />
+                        <label for="raison" style="font-weight: bold">Pour quelle raison nous contactez-vous ?</label><br />
                         <select name="raison" id="raison">
                             <optgroup label="Commentaires positifs">
                                 <option value="suggestions">J'ai des suggestions, conseils.</option>
@@ -34,17 +34,18 @@
                         </select>
                     </p>
 
-                        <label for="improve">Vos commentaires, suggestions, complaintes : </label><br />
-                            <textarea name="improve" id="ameliorer" cols= 65 rows = 30>Améliorer ton site ? M'enfin il est déjà génialissime tel quel ! Quel générosité d'avoir mis en place cette plateforme ! Milles merci !!!
+                        <label for="improve" style="font-weight: bold">Vos commentaires, suggestions, complaintes : </label><br />
+                            <textarea name="improve" id="ameliorer" cols= 65 rows = 20>Améliorer ton site ? M'enfin il est déjà génialissime tel quel ! Quel générosité d'avoir mis en place cette plateforme ! Milles merci !!!
                             </textarea>
                                 
-                                <p>Cochez le type d'utilisateur IF3 :<br />
+                                <p><strong>Cochez le type d'utilisateur IF3 : <br /></strong>
                                     <input type="radio" name="status" value="Staff" id="staff" /> <label for="staff">Staff</label><br />
                                     <input type="radio" name="status" value="intern" id="intern" /> <label for="intern">Stagiaire en cours</label><br />
                                     <input type="radio" name="status" value="alumni" id="alumni" /> <label for="alumni">Ancien.ne stagiaire</label><br />
                                     <input type="radio" name="status" value="extern" id="extern" /> <label for="extern">Externe</label>
+                                    </br>
                                 </p>
-        </fieldset>
+        </fieldset></br>
                                 <input type="submit" value="Envoyer"/>                        
     </form>
 </body>

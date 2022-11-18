@@ -17,6 +17,7 @@ a:link, #contact {
 }
 
 textarea {
+    
     padding : 10px 5px;
    
 }
@@ -29,3 +30,12 @@ textarea {
 :required {
     border-color: red;
 }
+
+
+/* input[type=submit] {
+    
+} */
+
+/* legend { 
+    font-weight: bold;
+}*/
