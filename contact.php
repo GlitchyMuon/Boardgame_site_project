@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css" />
     <title>Contact</title>
 </head>
 <body>
     <h1>Contact</h1>
 
     <form method="post" action="traitement.php">
-        <fieldset style="padding-left:75px;border:2px dotted indigo">
-            <legend style="font-weight: bold">Vos coordonnées</legend>
+        <fieldset  style="padding-left:75px;border:2px dotted;border-color: darksalmon">
+            <legend>Vos coordonnées</legend>
         
                 <p><label for="user">Votre pseudo</label> : <input type="text" name="user" id="user" size="30" maxlength="15" required autofocus /></p>
             
                 <p><label for="email">Votre e-mail</label> : <input type="email" name="email" id="email" placeholder="Ex : username@gmail.com" size="30" maxlength="30" required /></p>
         </fieldset>
 
-        <fieldset style="padding-left:75px;border:2px dashed indigo">
+        <fieldset style="padding-left:75px;border:2px dashed darksalmon">
             <legend style="font-weight: bold">Votre souhait</legend>
                     <p>
                         <label for="raison" style="font-weight: bold">Pour quelle raison nous contactez-vous ?</label><br />
@@ -34,8 +35,8 @@
                         </select>
                     </p>
 
-                        <label for="improve" style="font-weight: bold">Vos commentaires, suggestions, complaintes : </label><br />
-                            <textarea name="improve" id="ameliorer" cols= 65 rows = 20>Améliorer ton site ? M'enfin il est déjà génialissime tel quel ! Quel générosité d'avoir mis en place cette plateforme ! Milles merci !!!
+                        <label for="improve">Vos commentaires, suggestions, complaintes : </label><br />
+                            <textarea name="improve" id="ameliorer" cols= 60 rows = 20 style="font-family: 'Corbel','Candara'">Améliorer ton site ? M'enfin il est déjà génialissime tel quel ! Quel générosité d'avoir mis en place cette plateforme ! Milles merci !!!
                             </textarea>
                                 
                                 <p><strong>Cochez le type d'utilisateur IF3 : <br /></strong>

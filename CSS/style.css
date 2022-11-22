@@ -1,13 +1,38 @@
-body{
-    background-color: rgb(0, 29, 15);
+body {
+    background-color: rgb(0, 69, 36);
+    font-family: 'Corbel', 'Candara', 'Bahnschrift', sans-serif;
 }
-h1{
+h1 {
     color:rgb(169, 218, 202);
     text-align: center;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 5px 5px 1px darksalmon;
+    border-radius: 10px;
+    border-top: 2px ridge darksalmon;
+    border-left: 1px ridge darksalmon;
+    padding: 5px;
+    padding-block-start: 5px;
+    padding-block-end: 5px;
+    
 }
 
-a:link, #add {
+p {
+    color:blanchedalmond;
+}
 
+label {
+    color: blanchedalmond;
+    font-weight: bold;
+
+}
+
+legend {
+    color: blanchedalmond;
+    font-weight: bold
+}
+
+
+a:link, #add {
     text-align : left;
 }
 
@@ -32,10 +57,20 @@ textarea {
 }
 
 
-/* input[type=submit] {
-    
-} */
+input[type=submit] {
+    background-color: indianred; 
+    color:blanchedalmond;
+}
 
-/* legend { 
-    font-weight: bold;
-}*/
+nav {
+    justify-content: center;
+}
+
+footer { /* doesn't apply*/
+    color:darkseagreen ;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-anchor: end; /* doesn't apply*/
+    
+}

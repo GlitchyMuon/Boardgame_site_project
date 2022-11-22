@@ -9,16 +9,16 @@
 </head>
 <body>
     <h1>Bienvenue sur notre plateforme de partage de jeux de société !</h1>
-    
-        <button onclick="window.location.href='ajouts.php'">
-        Ajoutes un jeu
-        </button>
-
-            <button onclick="window.location.href='contact.php'">
-                Contactes-nous
+        <nav>
+            <button onclick="window.location.href='ajouts.php'" style="font-family:'Corbel','Candara'; font-weight: bold">
+            Ajoutes un jeu
             </button>
 
-    <h2>Merci de votre visite</h2>
+            <button onclick="window.location.href='contact.php'" style="font-family:'Corbel','Candara'; font-weight: bold">
+            Contactes-nous
+            </button>
+        </nav>        
+            <footer>Merci de votre visite</footer>
 
             
       
