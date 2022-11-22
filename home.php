@@ -18,7 +18,11 @@
             Contactes-nous
             </button>
         </nav>        
-            <footer>Merci de votre visite</footer>
+        <footer>
+            <p>Made with frustration</p>
+            <p>Merci de votre visite</p>
+
+        </footer>
 
             
       

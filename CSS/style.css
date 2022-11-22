@@ -63,14 +63,22 @@ input[type=submit] {
 }
 
 nav {
-    justify-content: center;
+    display: flex;
+    justify-content:space-around;
 }
 
-footer { /* doesn't apply*/
+footer {
     color:darkseagreen ;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    text-anchor: end; /* doesn't apply*/
+    padding-right: 15px;
+    padding-left: 15px;
+    position: fixed;
+    left: 5;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: -15px;
     
 }
