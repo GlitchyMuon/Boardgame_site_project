@@ -13,7 +13,7 @@
     </a>
     <h1>Contact</h1>
 
-    <form method="post" action="traitement.php">
+    <form method="post" action="post">
         <fieldset  style="padding-left:75px;border:2px dotted;border-color: darksalmon">
             <legend>Vos coordonnées</legend>
         
