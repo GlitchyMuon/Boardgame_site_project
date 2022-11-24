@@ -8,6 +8,9 @@
     <title>Contact</title>
 </head>
 <body>
+    <a href="home.php">
+    <img src="CSS/img/home_button.png" alt="Bouton Home" style="width:82px;height:42px;">
+    </a>
     <h1>Contact</h1>
 
     <form method="post" action="traitement.php">
