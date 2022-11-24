@@ -19,7 +19,7 @@
             </button>
         </nav>        
         <footer>
-            <p>Made with frustration</p>
+            <p>Made with frustration (；￣Д￣)</p>
             <p>Merci de votre visite</p>
 
         </footer>

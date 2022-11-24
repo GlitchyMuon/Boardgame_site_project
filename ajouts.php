@@ -14,7 +14,7 @@
         <h1>Formulaire d'ajout d'un jeu</h1>
         <form method="post" action="post">
         <fieldset  style="padding-left:75px;border:2px dotted;border-color: darksalmon">
-            <legend>Vos coordononées</legend>
+            <legend>Vos coördonnées</legend>
                 <p><label for="user">Votre pseudo : </label><input type="text" name="user" id="user" size="30" maxlength="15" required autofocus /></p>
             
                 <p><label for="email">Votre e-mail : </label><input type="email" name="email" id="email" placeholder="Ex : username@gmail.com" size="30" maxlength="30" required /></p>
@@ -31,7 +31,6 @@
             <p><label for="max_player">Nombre maximum de joueurs : </label><input type="number" name="max_player" id="max_player" min="1" /></p>
             
            
-
         </fieldset>
         
         </form>

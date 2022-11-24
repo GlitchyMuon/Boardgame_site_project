@@ -15,7 +15,7 @@
 
     <form method="post" action="post">
         <fieldset  style="padding-left:75px;border:2px dotted;border-color: darksalmon">
-            <legend>Vos coordonnées</legend>
+            <legend>Vos coördonnées</legend>
         
                 <p><label for="user">Votre pseudo</label> : <input type="text" name="user" id="user" size="30" maxlength="15" required autofocus /></p>
             
