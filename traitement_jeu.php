@@ -1,0 +1,1 @@
+<h5>Votre ajout de jeu a bien été enregistré ! Merci de votre contribution !<h5>

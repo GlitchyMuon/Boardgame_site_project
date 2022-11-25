@@ -43,7 +43,7 @@
                             </textarea>
                                 
                                 <p><strong>Cochez le type d'utilisateur IF3 : <br /></strong>
-                                    <input type="radio" name="status" value="staff" id="staff" /> <label for="staff">Staff</label><br />
+                                    <input type="radio" name="user_type" value="staff" id="staff"/> <label for="staff">Staff</label><br />
                                     <input type="radio" name="user_type" value="intern" id="intern" /> <label for="intern">Stagiaire en cours</label><br />
                                     <input type="radio" name="user_type" value="alumni" id="alumni" /> <label for="alumni">Ancien.ne stagiaire</label><br />
                                     <input type="radio" name="user_type" value="extern" id="extern" /> <label for="extern">Externe</label>

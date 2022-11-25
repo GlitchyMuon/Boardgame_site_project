@@ -1,9 +1,12 @@
 body {
     background-color: rgb(3, 61, 42);
+    color:bisque;
     font-family: 'Corbel', 'Candara', 'Bahnschrift', sans-serif;
 }
 h1 {
     color:rgb(169, 218, 202);
+    margin-left: auto;  /* permet de centrer !*/
+    margin-right: auto; /* permet de centrer !*/
     text-align: center;
     text-shadow: 2px 2px 4px black;
     box-shadow: 5px 5px 1px darksalmon;
@@ -13,7 +16,7 @@ h1 {
     padding: 5px;
     padding-block-start: 5px;
     padding-block-end: 5px;
-    
+    width: 40%; /*sinon par défaut 100%*/
 }
 
 p {
@@ -60,13 +63,36 @@ textarea {
 input[type=submit] {
     background-color: indianred; 
     color:blanchedalmond;
+    border: groove;
+    border-color: darksalmon;
+    border-radius: 10px;
+    padding: 16px 32px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 10%;
 }
 
-nav {
+nav { /*le contenu autour des boutons du nav*/
     display: flex;
     justify-content:space-around;
 }
 
+button {
+    font-family:'Corbel','Candara';
+    font-weight: bold; 
+    background-color: coral;
+    color: blanchedalmond;
+    border: groove;
+    border-color:bisque;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 10%;
+}
 
 footer {
     color:darkseagreen ;

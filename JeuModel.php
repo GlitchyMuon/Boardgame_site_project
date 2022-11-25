@@ -1,8 +1,8 @@
 <?php 
 include_once 'DBConnection.php';
-include_once 'Ajouts.php';
+include_once 'Jeu.php'; //la page de la classe
 
-class AjoutModel {
+class JeuModel {
 
 
     public DBConnection $myConnection; 
@@ -10,7 +10,7 @@ class AjoutModel {
 
     function __construct()
     {
-        $this->myConnection = new DBConnection("");
+        $this->myConnection = new DBConnection("projet_site_jeux_de_societe");
         $this->myPDO= $this->myConnection->open();
     
     }
@@ -20,7 +20,7 @@ class AjoutModel {
         $this->myConnection->close();
     }
 
-    function getSubmits() : Array {
+    function getAllGames() : Array {
         
         $query= "
                 SELECT * FROM boardgame ;
@@ -29,24 +29,27 @@ class AjoutModel {
         $request->execute();
         $result = $request->fetchAll();
 
-        $allSubmits = [];
+        $allGames = [];
 
-        foreach ($result as $submit) {
+        foreach ($result as $aLineTableGame) {
             
-            $aSubmit = new Ajout($submit[""],$submit[""] );
+            $aGame = new Jeu($aLineTableGame["Name"], $aLineTableGame["Description"], $aLineTableGame["Min_players"], $aLineTableGame["Max_players"]);
 
             //Autre façon de faire
             // $aFormation->id = $formation["id"]; 
             // $aFormation->nom = $formation["nom"];
             
            
-            $allSubmits [] =  $aSubmit;
+            $allGames [] = $aGame;
 
         }
 
-        return $allSubmits;
+        return $allGames;
 
-
+    }
+    
+    function addGame(){
+        
     }
 
 

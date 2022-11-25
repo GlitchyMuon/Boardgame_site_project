@@ -4,18 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Portail de jeux de société d'If3</title>
 </head>
 <body>
         <header>
-
-            <div class="style-logo">
-                <a href="index.php">   
-                    <img src="medias/images/logo-if3.png" alt="Logo Interface3">
-                </a>
-            </div>
-
+            <h3>Portail de jeux de société d'IF3</h3>
         <?php
            include("nav.php");
         ?>
@@ -24,17 +18,15 @@
         
         <?php
 
-            include("ajouts.php");
-            include("AjoutModel.php");
+            // include("jeux.php");
+            // include("JeuModel.php");
 
             if(isset($_GET["page"])){
                 $maPage= $_GET["page"];
 
                 switch ($maPage) {
-                    case 'ajouts':
-                        $model = new AjoutModel();
-                        $toutAjouts = $model->getAllSubmits(); 
-                        include("ajouts.php");
+                    case 'jeux': 
+                        include("jeux.php");
                         break;
                     
                     case 'contact':
@@ -45,22 +37,13 @@
                         include("home.php");
                         break;
                 }   
-
-
+            
             }else {
                 include("home.php");
             }
+
+        include_once "footer.php"
         ?>
 
-        
-        <footer>
-            <!-- <div class="style-footer"> -->
-            
-            <p>Made with frustration (；￣Д￣)</p>
-            <p>Merci de votre visite</p>
-
-            <!-- </div> -->
-     
-        </footer>
 </body>
 </html>
