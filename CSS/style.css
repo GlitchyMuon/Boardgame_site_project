@@ -23,7 +23,13 @@ h2 {
     color:darksalmon;
     text-align: left;
     text-shadow: 1px 1px 2px rgb(140, 60, 35);
+    font-size: xx-large;
 } 
+
+h3 {
+    color:rgb(169, 218, 202);
+    text-align: left;
+}
 
 p {
     color:blanchedalmond;
@@ -101,17 +107,30 @@ button {
 }
 
 footer {
-    color:darkseagreen ;
+    background-color:rgb(3, 48, 33);
     display: flex;
     justify-content: space-between;
+    border-style: dashed;
+    border-width: 2px;
+    border-top: 2px;
+    border-top-color: lightsalmon;
+    border-left-color: lightsalmon;
+    border-right-color: lightsalmon;
+    border-bottom-color: lightsalmon;
     padding-right: 15px;
     padding-left: 15px;
-    position: fixed;
+    position:relative;
+    margin-top: 20px;
     left: 5;
     right: 0;
     bottom: 0;
-    width: 100%;
+    width: 99%;
     text-align: center;
     margin: -15px;
+    font-weight:900;
     
+}
+
+footer, p{
+    color:indianred;
 }

@@ -22,11 +22,11 @@
     $model = new JeuModel();
     $toutLesJeux = $model->getAllGames();
     foreach ($toutLesJeux as $unJeu){
-        echo "<h2>Nom du jeu : $unJeu->nom</h2><br/>";
+        echo "<h3>Nom du jeu : $unJeu->nom</h3>";
             
         echo "<h4>Description : </h4> $unJeu->description
             <h4>Nombre minimum de joueurs : $unJeu->min_joueurs</h4> 
-            <h4>Nombre maximum de joueurs : $unJeu->max_joueurs</h4>";
+            <h4>Nombre maximum de joueurs : $unJeu->max_joueurs</h4></br></br>";
     }
 ?>
                

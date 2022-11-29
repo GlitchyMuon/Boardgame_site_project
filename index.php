@@ -9,9 +9,9 @@
 </head>
 <body>
         <header>
-            <h3>Portail de jeux de société d'IF3</h3>
         <?php
            include("nav.php");
+           include("JeuModel.php");
         ?>
         </header>
     
@@ -25,7 +25,9 @@
                 $maPage= $_GET["page"];
 
                 switch ($maPage) {
-                    case 'jeux': 
+                    case 'jeux':
+                        // $model = new JeuModel();
+                        // $tousJeux = $model->addGame($newGame);
                         include("jeux.php");
                         break;
                     

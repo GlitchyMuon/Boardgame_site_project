@@ -33,7 +33,7 @@ class JeuModel {
 
         foreach ($result as $aLineTableGame) {
             
-            $aGame = new Jeu($aLineTableGame["Name"], $aLineTableGame["Description"], $aLineTableGame["Min_players"], $aLineTableGame["Max_players"]);
+            $aGame = new Jeu($aLineTableGame["Name"], $aLineTableGame["Description"], $aLineTableGame["Min_players"], $aLineTableGame["Max_players"]);  //nom des tables db
 
             //Autre façon de faire
             // $aFormation->id = $formation["id"]; 
@@ -48,9 +48,27 @@ class JeuModel {
 
     }
     
-    function addGame(){
-        
+    function addGame(Jeu $newGame): void{
+        $query = "INSERT INTO  `boardgame`(`Name`, `Description`, `Min_players`, `Max_players`) VALUES(:Name, :Description, :Min_players, :Max_players)
+    ";
+    try{
+        $request= $this->myPDO->prepare($query);
+
+        $request->execute([
+
+            $newGame->Name,
+            $newGame->Description,
+            $newGame->Min_players,
+            $newGame->Max_players
+
+        ]);
+    
+    }catch (PDOException $exception){
+        die("Erreur dans l'insertion : $exception->getMessage()");
     }
+
+        
+}
 
 
    
