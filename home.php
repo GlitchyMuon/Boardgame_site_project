@@ -9,6 +9,8 @@
 </head>
 <body>
     <h1>Bienvenue sur notre plateforme de partage de jeux de société !</h1>
+
+    <h2>Nos jeux partagés</h2>
 </body>
 </html>
 
