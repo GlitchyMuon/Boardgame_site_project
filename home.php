@@ -28,6 +28,7 @@
             <h4>Nombre minimum de joueurs : $unJeu->min_joueurs</h4> 
             <h4>Nombre maximum de joueurs : $unJeu->max_joueurs</h4></br></br>";
     }
+    include_once "footer.php";
 ?>
                
         

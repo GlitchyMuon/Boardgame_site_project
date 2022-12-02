@@ -2,6 +2,8 @@ body {
     background-color: rgb(3, 61, 42);
     color:bisque;
     font-family: 'Corbel', 'Candara', 'Bahnschrift', sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 h1 {
     color:rgb(169, 218, 202);
@@ -121,12 +123,12 @@ footer {
     padding-left: 15px;
     position:relative;
     margin-top: 20px;
-    left: 5;
-    right: 0;
-    bottom: 0;
-    width: 99%;
+    left: -50px;
+    right: -20px;
+    bottom: -10px;
+    width: 100%;
     text-align: center;
-    margin: -15px;
+    /* margin: -15px; */
     font-weight:900;
     
 }

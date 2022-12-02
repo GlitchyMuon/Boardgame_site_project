@@ -1,4 +1,5 @@
 <?php
+include_once "footer.php";
 include_once "contact.php";
 include_once "ContactModel.php";
 
@@ -31,8 +32,6 @@ if($envoiFormulaire){
     <title>Portail de jeux de société d'IF3</title>
 </head>
 <body>
-    <h1>Bienvenue sur notre plateforme de partage de jeux de société !</h1>
-
     <h5>Votre message a été enregistré ! Merci de votre feedback ٩(｡•́‿•̀｡)۶</h5>
 </body>
 </html>

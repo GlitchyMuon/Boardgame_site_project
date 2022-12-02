@@ -1,5 +1,5 @@
 <?php
-
+include_once "footer.php";
 include_once "JeuModel.php";
 include_once "Jeu.php";
 
@@ -42,8 +42,6 @@ if($formSubmission){    //ce qui se trouve au $ fait référence au contenu de l
     <title>Portail de jeux de société d'IF3</title>
 </head>
 <body>
-    <h1>Bienvenue sur notre plateforme de partage de jeux de société !</h1>
-
     <h5>Votre ajout de jeu a bien été enregistré ! Merci de votre contribution ! ヽ(>∀<☆)ノ<h5>
 </body>
 </html>
