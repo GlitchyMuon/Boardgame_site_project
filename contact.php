@@ -9,11 +9,11 @@
 </head>
 <body>
     <a href="home.php">
-    <img src="CSS/img/home_button.png" alt="Bouton Home" style="width:82px;height:42px;">
+    <img src="CSS/img/home_button.png" alt="Bouton Home" style="margin-top:20px;width:82px;height:42px;">
     </a>
     <h1>Contact</h1>
 
-    <form action="post_contact.php" method="post">
+    <form action="traitement_contact.php" method="post">
         <fieldset  style="padding-left:75px;border:2px dotted;border-color: darksalmon">
             <legend>Vos coördonnées</legend>
         
@@ -23,8 +23,8 @@
         </fieldset>
 
         <fieldset style="padding-left:75px;border:2px dashed darksalmon">
-            <legend style="font-weight: bold">Votre souhait</legend>
-                    <p>
+            <legend style="font-weight: bold">Votre message</legend>
+                    <!-- <p>
                         <label for="raison" style="font-weight: bold">Pour quelle raison nous contactez-vous ?</label><br />
                         <select name="raison" id="raison">
                             <optgroup label="Commentaires positifs">
@@ -36,19 +36,19 @@
                                 <option value="complain">J'ai des plaintes, remarques à faire !</option>
                             </optgroup>
                         </select>
-                    </p>
+                    </p> -->
 
-                        <label for="improve">Vos commentaires, suggestions, complaintes : </label><br />
-                            <textarea name="improve" id="ameliorer" cols= 60 rows = 20 style="font-family: 'Corbel','Candara'">Améliorer ton site ? M'enfin il est déjà génialissime tel quel ! Quel générosité d'avoir mis en place cette plateforme ! Milles merci !!!
+                        <label for="message">Vos commentaires, suggestions, complaintes : </label><br />
+                            <textarea name="message" id="message" cols= 60 rows = 20 style="font-family: 'Corbel','Candara'">Améliorer ton site ? M'enfin il est déjà génialissime tel quel ! Quel générosité d'avoir mis en place cette plateforme ! Milles merci !!!
                             </textarea>
                                 
-                                <p><strong>Cochez le type d'utilisateur IF3 : <br /></strong>
+                                <!-- <p><strong>Cochez le type d'utilisateur IF3 : <br /></strong>
                                     <input type="radio" name="user_type" value="staff" id="staff"/> <label for="staff">Staff</label><br />
                                     <input type="radio" name="user_type" value="intern" id="intern" /> <label for="intern">Stagiaire en cours</label><br />
                                     <input type="radio" name="user_type" value="alumni" id="alumni" /> <label for="alumni">Ancien.ne stagiaire</label><br />
                                     <input type="radio" name="user_type" value="extern" id="extern" /> <label for="extern">Externe</label>
                                     </br>
-                                </p>
+                                </p> -->
         </fieldset></br>
                                 <input type="submit" value="Envoyer"/>                        
     </form>

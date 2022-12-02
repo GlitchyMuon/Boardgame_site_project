@@ -1,38 +1,3 @@
-<?php
-
-include_once "JeuModel.php";
-include_once "Jeu.php";
-
-
-
-$formSubmission = isset(
-        // $_POST["user"],
-        $_POST["game_name"],
-        $_POST["description"],
-        $_POST["min_players"],
-        $_POST["max_players"]);
-
-if($formSubmission){    //ce qui se trouve au $ fait référence au contenu de l'attribut name des input dans jeux.php en dessous
-
-    // $pseudo = $_POST["user"];
-    $nom = $_POST["game_name"];
-    $description = $_POST["description"];
-    $min_joueurs = $_POST["min_players"];
-    $max_joueurs = $_POST["max_players"];
-
-    $newGame = new Jeu($nom, $description, $min_joueurs, $max_joueurs);
-    $model = new JeuModel();
-    $model->addGame($newGame);
-
-    // header("Location:index.php?view=allgames");
-}
-// }else {      //sinon ça rentre direct dans else et affiche 404 dans la barre de nav. Mais sans, on voit le formulaire et le texte d'envoi mais ne rentre pas dans la db
-//     header("Location:index.php?view=404");
-// }
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -44,7 +9,7 @@ if($formSubmission){    //ce qui se trouve au $ fait référence au contenu de l
 </head>
 <body>
         <a href="home.php">
-        <img src="CSS/img/home_button.png" alt="Bouton Home" style="width:82px;height:42px;">
+        <img src="CSS/img/home_button.png" alt="Bouton Home" style="margin-top:20px;width:82px;height:42px;">
         </a>
             <h1>Formulaire d'ajout d'un jeu</h1>
             <form method="post" action="traitement_jeu.php" method="post">
